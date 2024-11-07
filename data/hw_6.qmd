@@ -1,0 +1,30 @@
+---
+title: "hw_6"
+authors: "Will, Saratessa, Marcus"
+bibliography: references.bib
+format: pdf
+execute:
+  echo: false
+fig-width: 6.5
+fig-height: 8
+---
+
+```{r, include=FALSE}
+library(tidyverse)
+library(dplyr)
+library(rio)
+library(ggplot2)
+library(janitor)
+library(here)
+library(readr)
+```
+
+```{r}
+data <- read_csv("C:/Users/Administrator/Desktop/Intro to Data Science/hw_6/data/star.csv", show_col_types = FALSE)
+```
+ 
+Using grounded theory and in-depth interviews with female gamers, this gender-based case study explores women’s strategies for coping with online game-related harassment. It shows that women are first and foremost an active audience, carefully managing their media environment to help ensure positive experiences. At the same time, their strategies come with limitations, such as hiding their contributions to gaming or provoking further harassment **[@cote2017]**. **@cote2023** conducted a detailed content analysis of Nintendo Power issues published from 1994 to 1999 showing that mainstream companies largely ignored the girls’ games movement, instead targeting male audiences through player representations, sexualized female characters, magazine covers featuring men, and predominantly male authors.
+
+\newpage
+
+**References**
