@@ -17,6 +17,7 @@ library(ggplot2)
 library(janitor)
 library(here)
 library(readr)
+library(knitr)
 ```
 
 ```{r}
@@ -28,3 +29,23 @@ Using grounded theory and in-depth interviews with female gamers, this gender-ba
 \newpage
 
 **References**
+
+\newpage
+
+```{r}
+star_table <- star %>% 
+  group_by(sex, frl) %>% 
+  summarise(
+    math_mean = round(mean(tmathss, na.rm = TRUE), 2),
+    math_sd = round(sd(tmathss, na.rm = TRUE), 2),
+    rdg_mean = round(mean(treadss, na.rm = TRUE), 2),
+    rdg_sd = round(sd(treadss, na.rm = TRUE), 2)
+  ) 
+```
+
+```{r}
+kable(star_table, col.names = c("sex", "frl", "math_mean", "math_sd", "rdg_mean", "rdg_sd"))
+```
+
+The above table presents summary statistics for math and reading scores, grouped by gender and free/ reduced lunch (frl) eligibility. Both boys and girls who are **not** eligible for free/ reduced lunch tend to have higher average math and reading scores, compared to their peers who are eligible for free/ reduced lunch. The standard deviations are generally stable across groups-- indicative of similar variability within each subgroup.
+
