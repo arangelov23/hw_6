@@ -23,8 +23,8 @@ library(knitr)
 ```{r}
 data <- read_csv("C:/Users/Administrator/Desktop/Intro to Data Science/hw_6/data/star.csv", show_col_types = FALSE)
 ```
- 
-Using grounded theory and in-depth interviews with female gamers, this gender-based case study explores women’s strategies for coping with online game-related harassment. It shows that women are first and foremost an active audience, carefully managing their media environment to help ensure positive experiences. At the same time, their strategies come with limitations, such as hiding their contributions to gaming or provoking further harassment **[@cote2017]**. **@cote2023** conducted a detailed content analysis of Nintendo Power issues published from 1994 to 1999 showing that mainstream companies largely ignored the girls’ games movement, instead targeting male audiences through player representations, sexualized female characters, magazine covers featuring men, and predominantly male authors.
+
+Using grounded theory and in-depth interviews with female gamers, this gender-based case study explores women’s strategies for coping with online game-related harassment. It shows that women are first and foremost an active audience, carefully managing their media environment to help ensure positive experiences @cote2020. At the same time, their strategies come with limitations, such as hiding their contributions to gaming or provoking further harassment **\[@cote2017\]**. @cote2023 conducted a detailed content analysis of Nintendo Power issues published from 1994 to 1999 showing that mainstream companies largely ignored the girls’ games movement. Male audiences were targeted through player representations, sexualized female characters, magazine covers featuring men, and predominantly male authors \*\*[@cote2018a]\*\*.
 
 \newpage
 
@@ -48,4 +48,3 @@ kable(star_table, col.names = c("sex", "frl", "math_mean", "math_sd", "rdg_mean"
 ```
 
 The above table presents summary statistics for math and reading scores, grouped by gender and free/ reduced lunch (frl) eligibility. Both boys and girls who are **not** eligible for free/ reduced lunch tend to have higher average math and reading scores, compared to their peers who are eligible for free/ reduced lunch. The standard deviations are generally stable across groups-- indicative of similar variability within each subgroup.
-
